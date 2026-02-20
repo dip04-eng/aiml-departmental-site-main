@@ -180,7 +180,7 @@ export const researchHighlights = [
 ];
 
 export const faculty = [
-  { id: "Sudipta Sahana", name: "Prof. Dr. Sudipta Sahana", designation: "Head of the Department", email: "ananya@uem.edu.in", qualification: "Ph.D. IISc Bangalore", experience: 18, publications: 65, googleScholar: "#", scopus: "#", image: "/src/assets/sudipta-sahana.jpeg" },
+  { id: "Sudipta Sahana", name: "Prof. Dr. Sudipta Sahana", designation: "Head of the Department", email: "ananya@uem.edu.in", qualification: "Ph.D. IISc Bangalore", experience: 18, publications: 65, googleScholar: "#", scopus: "#", image: "/sudipta-sahana.jpeg" },
   { id: " Aniruddha Ghosh", name: "Prof. Dr. Aniruddha Ghosh", designation: "Assistant Head of Department", email: "rajesh@uem.edu.in", qualification: "Ph.D. IIT Bombay", experience: 15, publications: 52, googleScholar: "#", scopus: "#" },
   { id: "Anasuya Sengupta", name: "Prof. Anasuya Sengupta", designation: "Associate Professor", email: "priya@uem.edu.in", qualification: "Ph.D. IIT Madras", experience: 12, publications: 38, googleScholar: "#", scopus: "#" },
   { id: "Anjan Kumar Payra", name: "Prof. Anjan Kumar Payra", designation: "Associate Professor", email: "vikram@uem.edu.in", qualification: "Ph.D. CMU", experience: 10, publications: 30, googleScholar: "#", scopus: "#" },
