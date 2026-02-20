@@ -1,13 +1,13 @@
 export const departmentInfo = {
-  name: "Computer Science Engineering (AI) & Computer Science Engineering (AI & ML)",
-  shortName: "CSE (AI) & CSE (AI & ML)",
+  name: "Computer Science Engineering (AI)",
+  shortName: "CSE (AI)",
   institution: "University of Engineering & Management, Kolkata",
   institutionShort: "UEM KOLKATA",
   tagline: "Shaping the engineers of tomorrow through research, innovation, and excellence.",
   established: 2019,
   phone: "+91 33 6652 2601",
   email: "hod.cseaiml@uem.edu.in",
-  address: "Department of CSE (AI) & CSE (AI & ML), UEM Kolkata, University Area, Plot No. III, B/5, New Town Rd, Action Area III, Newtown, Kolkata - 700160, West Bengal, India",
+  address: "Department of CSE (AI), UEM Kolkata, University Area, Plot No. III, B/5, New Town Rd, Action Area III, Newtown, Kolkata - 700160, West Bengal, India",
 };
 
 export const stats = [
@@ -17,11 +17,11 @@ export const stats = [
   { label: "Placement Rate", value: 95, suffix: "%" },
 ];
 
-export const aboutSnippet = "The Department of Computer Science Engineering (AI) & Computer Science Engineering (AI & ML) is committed to fostering academic excellence and cutting-edge research in artificial intelligence, machine learning, and data science. With a strong emphasis on both theoretical foundations and practical applications, we prepare students to lead innovation in an increasingly data-driven world.";
+export const aboutSnippet = "The Department of Computer Science Engineering (AI) is committed to fostering academic excellence and cutting-edge research in artificial intelligence, machine learning, and data science. With a strong emphasis on both theoretical foundations and practical applications, we prepare students to lead innovation in an increasingly data-driven world.";
 
 export const programs = [
   {
-    name: "B.Tech in CSE (AI) & CSE (AI & ML)",
+    name: "B.Tech in CSE (AI)",
     duration: "4 Years",
     intake: 60,
     description: "A rigorous undergraduate program blending core CS fundamentals with specialized AI and ML coursework, industry projects, and research exposure.",
@@ -31,7 +31,7 @@ export const programs = [
     careerOutcomes: ["ML Engineer", "Data Scientist", "AI Researcher", "Software Engineer"],
   },
   {
-    name: "M.Tech in AI & ML",
+    name: "M.Tech in AI",
     duration: "2 Years",
     intake: 25,
     description: "An advanced program focusing on deep learning, NLP, computer vision, and intelligent systems with thesis-driven research.",
@@ -41,7 +41,7 @@ export const programs = [
     careerOutcomes: ["Research Scientist", "Senior ML Engineer", "AI Architect", "PhD Scholar"],
   },
   {
-    name: "Ph.D. in CSE (AI) & CSE (AI & ML)",
+    name: "Ph.D. in CSE (AI)",
     duration: "3–5 Years",
     intake: 10,
     description: "Doctoral research program with specializations in reinforcement learning, generative AI, and interdisciplinary computing.",
@@ -303,7 +303,7 @@ export const alumniData = [
 ];
 
 export const alumniTestimonials = [
-  { name: "Arjun Nambiar", batch: "2020", quote: "The rigorous curriculum and research exposure at UEM KOLKATA's AI & ML department directly prepared me for a career in cutting-edge AI research at Google." },
+  { name: "Arjun Nambiar", batch: "2020", quote: "The rigorous curriculum and research exposure at UEM KOLKATA's AI department directly prepared me for a career in cutting-edge AI research at Google." },
   { name: "Shreya Kapoor", batch: "2019", quote: "The faculty mentorship and industry connections I built during my time here were instrumental in landing my role at Meta. Truly a world-class department." },
   { name: "Nandini Krishnan", batch: "2018", quote: "From hackathons to research papers, every experience at the department shaped my ability to bridge technical AI expertise with product thinking." },
 ];

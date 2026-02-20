@@ -4,7 +4,7 @@ import AboutSnippet from "@/components/home/AboutSnippet";
 import NoticesSection from "@/components/home/NoticesSection";
 import ProgramsSection from "@/components/home/ProgramsSection";
 import ResearchSection from "@/components/home/ResearchSection";
-import FacultySpotlight from "@/components/home/FacultySpotlight";
+// import FacultySpotlight from "@/components/home/FacultySpotlight";
 import EventsSection from "@/components/home/EventsSection";
 // import AchievementsBanner from "@/components/home/AchievementsBanner";
 // import RecruitersStrip from "@/components/home/RecruitersStrip";
@@ -17,7 +17,7 @@ const Index = () => (
     <NoticesSection />
     <ProgramsSection />
     <ResearchSection />
-    <FacultySpotlight />
+    {/* <FacultySpotlight /> */}
     <EventsSection />
     {/* <AchievementsBanner /> */}
     {/* <RecruitersStrip /> */}

@@ -28,7 +28,7 @@ const About = () => (
           <h2 className="section-title">Vision & Mission</h2>
         </div>
         <blockquote className="border-l-4 border-accent pl-6 py-2 text-lg font-display text-foreground/80 italic mb-8">
-          "To be a globally recognized center of excellence in AI & ML education and research, producing ethical and innovative leaders."
+          "To be a globally recognized center of excellence in AI education and research, producing ethical and innovative leaders."
         </blockquote>
 
         <h3 className="font-display font-bold text-xl mb-4">Mission</h3>

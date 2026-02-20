@@ -1,8 +1,8 @@
-# UEM Kolkata — AI & ML Department Website
+# UEM Kolkata — AI Department Website
 
 ## Project Info
 
-Official departmental website for the AI & ML department at UEM Kolkata.
+Official departmental website for the AI department at UEM Kolkata.
 
 ## Getting Started
 
