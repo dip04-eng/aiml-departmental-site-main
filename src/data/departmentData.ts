@@ -13,6 +13,7 @@ export const departmentInfo = {
 export const stats = [
   { label: "Students Enrolled", value: 915 },
   { label: "Research Publications", value: 180 },
+  { label: "Projects Ongoing", value: 28 },
   { label: "Placement + Higher Qualification", value: 100, suffix: "%" },
 ];
 
