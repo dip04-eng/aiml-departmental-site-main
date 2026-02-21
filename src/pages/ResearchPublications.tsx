@@ -8,6 +8,19 @@ const types = ["all", "journal", "conference", "book_chapter"] as const;
 const ResearchPublications = () => {
   const [yearFilter, setYearFilter] = useState<number | "all">("all");
   const [typeFilter, setTypeFilter] = useState<typeof types[number]>("all");
+  const [expandedIds, setExpandedIds] = useState<Set<number>>(new Set());
+
+  const toggleExpand = (id: number) => {
+    setExpandedIds(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(id)) {
+        newSet.delete(id);
+      } else {
+        newSet.add(id);
+      }
+      return newSet;
+    });
+  };
 
   const filtered = publications.filter(p => {
     if (yearFilter !== "all" && p.year !== yearFilter) return false;
@@ -59,24 +72,49 @@ const ResearchPublications = () => {
             <div key={year} className="mb-10">
               <h3 className="font-display font-bold text-xl text-foreground mb-4 border-b border-border pb-2">{year}</h3>
               <div className="space-y-4">
-                {pubs.map((p) => (
-                  <div key={p.id} className="bg-card border border-border rounded-lg p-5">
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <p className="text-[15px] font-medium text-foreground font-body italic mb-1">{p.title}</p>
-                        <p className="text-sm text-muted-foreground font-body mb-2">{p.authors.join(", ")}</p>
-                        <p className="text-sm text-muted-foreground font-body">{p.journal}</p>
-                        <div className="flex gap-2 mt-2">
-                          <span className="text-[10px] bg-primary/5 text-primary px-2 py-0.5 rounded-full font-body font-medium capitalize">{p.type === "book_chapter" ? "Book Chapter" : p.type}</span>
-                          <span className="text-[10px] bg-accent/10 text-accent px-2 py-0.5 rounded-full font-body font-medium">{p.indexedIn}</span>
+                {pubs.map((p) => {
+                  const isExpanded = expandedIds.has(p.id);
+                  const titleLength = p.title.length;
+                  const shouldTruncate = titleLength > 150;
+                  const displayTitle = shouldTruncate && !isExpanded 
+                    ? p.title.substring(0, 150) + "..." 
+                    : p.title;
+
+                  return (
+                    <div key={p.id} className="bg-card border border-border rounded-lg p-5">
+                      <div className="flex items-start justify-between gap-4">
+                        <div className="flex-1">
+                          <p className="text-[15px] font-medium text-foreground font-body italic mb-1">
+                            {displayTitle}
+                            {shouldTruncate && (
+                              <button
+                                onClick={() => toggleExpand(p.id)}
+                                className="ml-2 text-xs text-primary hover:text-primary-light font-semibold"
+                              >
+                                {isExpanded ? "Show less" : "Show more"}
+                              </button>
+                            )}
+                          </p>
+                          <p className="text-sm text-muted-foreground font-body mb-2">{p.authors.join(", ")}</p>
+                          <p className="text-sm text-muted-foreground font-body">{p.journal}</p>
+                          <div className="flex gap-2 mt-2">
+                            <span className="text-[10px] bg-primary/5 text-primary px-2 py-0.5 rounded-full font-body font-medium capitalize">{p.type === "book_chapter" ? "Book Chapter" : p.type}</span>
+                            <span className="text-[10px] bg-accent/10 text-accent px-2 py-0.5 rounded-full font-body font-medium">{p.indexedIn}</span>
+                          </div>
                         </div>
+                        <a 
+                          href={`https://scholar.google.com/scholar?q=${encodeURIComponent(p.title)}`}
+                          target="_blank" 
+                          rel="noreferrer" 
+                          className="text-primary hover:text-primary-light transition-colors shrink-0"
+                          title="Search on Google Scholar"
+                        >
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
                       </div>
-                      <a href={`https://doi.org/${p.doi}`} target="_blank" rel="noreferrer" className="text-primary hover:text-primary-light transition-colors shrink-0">
-                        <ExternalLink className="w-4 h-4" />
-                      </a>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
           ))}
