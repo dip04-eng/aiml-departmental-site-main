@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, FlaskConical, IndianRupee } from "lucide-react";
+import { ArrowRight, FlaskConical, Calendar } from "lucide-react";
 import { researchHighlights } from "@/data/departmentData";
 
 const ResearchSection = () => (
@@ -29,8 +29,8 @@ const ResearchSection = () => (
               PI: {project.pi}
             </p>
             <div className="inline-flex items-center gap-1 bg-accent/10 text-accent px-3 py-1 rounded-full text-xs font-bold font-mono">
-              <IndianRupee className="w-3 h-3" />
-              {project.amount}
+              <Calendar className="w-3 h-3" />
+              {project.date}
             </div>
           </div>
         ))}

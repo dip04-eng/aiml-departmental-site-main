@@ -158,19 +158,19 @@ export const researchHighlights = [
     title: "AI-Driven Thermal Imaging: A Comprehensive Web-Based Tool for Non-Invasive Medical Diagnostics",
     pi: "Sudipta Sahana",
     agency: "ISACC 2025",
-    amount: "February 2025",
+    date: "February 2025",
   },
   {
     title: "Comparative Analysis for Conversion of Double Base Number System (DBNS) from Conventional Number System using Binary Search Algorithm by changing Base patterns for ANN-based Applications",
     pi: "Aniruddha Ghosh",
     agency: "ICACA-2024",
-    amount: "December 2024",
+    date: "December 2024",
   },
   {
     title: "Empowering 5G Networks: Machine Learning Solutions to Optimization Challenges",
     pi: "Anasuya Sengupta",
     agency: "ICHCSC-2024",
-    amount: "July 2024",
+    date: "July 2024",
   },
 ];
 
