@@ -675,12 +675,13 @@ export const alumniData = [
   { id: 1, name: "Avik Agarwala", batch: "2021-2025", role: "Systems Engineer", company: "TCS", linkedin: "https://www.linkedin.com/in/avikagarwala/" },
   { id: 2, name: "Alik Agarwala", batch: "2021-2025", role: "SDE", company: "Amazon", linkedin: "https://www.linkedin.com/in/alik-agarwala/" },
   { id: 3, name: "Adrika Mondal", batch: "2021-2025", role: "SDE", company: "Amazon", linkedin: "https://www.linkedin.com/in/adrika-mondal/" },
+  { id: 4, name: "Nilanjana De", batch: "2021-2025", role: "SDE-1", company: "Amazon", linkedin: "https://www.linkedin.com/in/nilanjana-de-382bb3233/" },
 ];
 
 export const alumniTestimonials = [
-  { name: "Avik Agarwala", batch: "2021-2025", quote: "The rigorous curriculum and hands-on projects at IEM Kolkata's AI department prepared me well for a professional career in tech." },
-  { name: "Alik Agarwala", batch: "2021-2025", quote: "The faculty mentorship and industry exposure I received here were instrumental in landing my role at Amazon." },
-  { name: "Adrika Mondal", batch: "2021-2025", quote: "From hackathons to real-world projects, every experience at the department shaped my technical skills and problem-solving ability." },
+  { name: "Arjun Nambiar", batch: "2020", quote: "The rigorous curriculum and research exposure at IEM Kolkata's AI department directly prepared me for a career in cutting-edge AI research at Google." },
+  { name: "Shreya Kapoor", batch: "2019", quote: "The faculty mentorship and industry connections I built during my time here were instrumental in landing my role at Meta. Truly a world-class department." },
+  { name: "Nandini Krishnan", batch: "2018", quote: "From hackathons to research papers, every experience at the department shaped my ability to bridge technical AI expertise with product thinking." },
 ];
 
 export const galleryImages = [
