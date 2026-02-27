@@ -679,9 +679,9 @@ export const alumniData = [
 ];
 
 export const alumniTestimonials = [
-  { name: "Arjun Nambiar", batch: "2020", quote: "The rigorous curriculum and research exposure at IEM Kolkata's AI department directly prepared me for a career in cutting-edge AI research at Google." },
-  { name: "Shreya Kapoor", batch: "2019", quote: "The faculty mentorship and industry connections I built during my time here were instrumental in landing my role at Meta. Truly a world-class department." },
-  { name: "Nandini Krishnan", batch: "2018", quote: "From hackathons to research papers, every experience at the department shaped my ability to bridge technical AI expertise with product thinking." },
+  { name: "Avik Agarwala", batch: "2021-2025", quote: "The rigorous curriculum and hands-on projects at IEM Kolkata's AI department prepared me well for a professional career in tech." },
+  { name: "Alik Agarwala", batch: "2021-2025", quote: "The faculty mentorship and industry exposure I received here were instrumental in landing my role at Amazon." },
+  { name: "Adrika Mondal", batch: "2021-2025", quote: "From hackathons to real-world projects, every experience at the department shaped my technical skills and problem-solving ability." },
 ];
 
 export const galleryImages = [
